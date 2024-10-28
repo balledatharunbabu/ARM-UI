@@ -1,0 +1,14 @@
+.cardanimation{
+    position: relative;
+    animation-name: slide;
+    animation-duration: 2s;
+    background: rgb(17,47,55);
+    background: linear-gradient(140deg, rgba(17,47,55,1) 0%);
+}
+
+@keyframes slide {
+    0%   {top:0px;}    /* Start at top */
+    50%  {top:30px;}  /* Move down to bottom */
+    100% {top:0px;}  
+
+}

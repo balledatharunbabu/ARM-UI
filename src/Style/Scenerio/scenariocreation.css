@@ -1,0 +1,92 @@
+.ScenarioCreation{
+    /* background-image: url('C:\Users\tballeda\mui_practice\public\Slight Ocean View.jpg'); */
+    height: 91vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* margin-top: 4.5rem;
+    margin-left: 16.5rem; */
+    align-items: center;
+    justify-content: center;
+}
+
+.CreationEmptyDiv{
+  height: 4rem;
+}
+
+.OuterDiv{
+  width: 45%;
+  border: 1px solid rgb(213, 211, 234);
+  height: 75vh;
+  /* border: 1px solid rgb(17, 28, 77); */
+  box-shadow: 0px 0px 3px 1px rgb(199, 200, 204);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 28rem; */
+}
+
+.ScenarioDetailsHeader{
+
+   background-color: #c5c5ca;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.ScenarioCreationBody{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.InputFields {
+    width: 20rem;
+    margin-left: 5rem;
+
+    /* background-color: whitesmoke; */
+}
+.InputFields .MuiInputBase-root {
+ /* Text color inside the input */
+    color: black;
+  }
+  
+  .InputFields .MuiInputLabel-root {
+    color: black; /* Label color */
+  }
+
+
+  .InputFields .MuiOutlinedInput-root fieldset {
+     border-color: black;/* Border color when idle */
+     border-color: black;
+
+  }
+  
+  .InputFields .MuiOutlinedInput-root:hover fieldset{
+    /* border-color: black; Border color on hover */
+    border-color: black;
+  
+
+  }
+  
+  .InputFields .MuiOutlinedInput-root.Mui-focused fieldset {
+      border-color:black; /*Border color when focused */ 
+  }
+  
+  .InputFields .MuiInputBase-root{
+    height: '2rem', 
+  }
+
+  .InputFields .MuiInputLabel-root.Mui-focused{
+    color: black;
+
+  }
+   
+ 

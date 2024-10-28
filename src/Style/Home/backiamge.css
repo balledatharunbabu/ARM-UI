@@ -1,0 +1,27 @@
+.homestyle{
+    /* background: #1F1C2C;  
+    background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  
+    background: linear-gradient(to right, #928DAB, #1F1C2C); 
+   
+    background: linear-gradient(to right, #464450, #1F1C2C); */
+    /* background: #1F1C2C;  
+background: -webkit-linear-gradient(to bottom, #928DAB, #1F1C2C); 
+background: linear-gradient(to top, #928DAB, #1F1C2C); */
+
+
+    /* background-color: rgb(17, 17, 43); */
+
+    background-size: cover;
+    /* background-color: rgb(236, 236, 236); */
+
+    background-color:white;
+/* 
+    background-color: #E0FFFF; */
+
+    background-position: center;
+    
+}
+
+.appbar{
+    background-color: pink;
+}

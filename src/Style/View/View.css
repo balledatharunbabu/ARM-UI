@@ -1,0 +1,32 @@
+.viewclass{
+    height: 70vh;
+
+    width:35%;
+
+    border: 1px solid rgb(213, 211, 234);
+
+    border-radius: 10px; 
+
+    /* background-color:#CCCCFF; */
+    box-shadow: 0px 0px 3px 1px rgb(199, 200, 204);
+    /* background-color: whitesmoke; */
+ 
+    margin-left: 20rem;
+
+
+    /* background-image: url('C:\Users\tballeda\mui_practice\public\Slight Ocean View.jpg'); */
+
+    
+   
+
+}
+
+/* .viewclass:hover{
+    transform: 'scale(1.05)';
+    box-shadow: 0px 7px 8px whitesmoke;
+}
+
+.viewbutton{
+    margin-bottom: 16px  !important;
+    align-items: center !important;
+} */

@@ -1,0 +1,37 @@
+.display{
+    height: 35rem;
+    width:50rem;
+    border: 0.1px solid black ; 
+
+  border-radius: 10px;
+
+
+
+    margin-left: 5rem;
+
+    margin-top: 7.5rem;
+
+}
+
+.viewtable th, .viewtable td{
+  border: 1px solid rgb(213, 211, 234);
+   
+    margin-left: 1rem;
+color: white;
+    margin-top: 5rem;
+    height: 5rem;
+    
+    border-collapse: collapse;
+    width: 65.5rem;
+  }
+
+  .viewtable th, .viewtable td{
+    
+
+    text-align: center;
+  }
+
+  .viewtable{
+    margin-top: 70px;
+    border-collapse: collapse;
+  }
