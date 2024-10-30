@@ -15,12 +15,11 @@ export default function Sceneriocard() {
   
   const navigate=useNavigate();
   return (
-
     <Card sx={{ width: 345 , '&:hover': {
       transform: 'scale(1.05)', 
       boxShadow: '0px 8px 10px #000000',
       // background:'#F0FFFF'
-    }}} onClick={()=>{navigate("/scenario/replay")}}>
+    }}} onClick={()=>{navigate("/replay")}}>
         <CardMedia sx={{ height: 140}}   image='/Replay.PNG'>
           {/* <Typography  variant="h4" component="div" color='WHITE' bgcolor={'#1F1C2C'} padding='40px' fontSize={'25px'} >
                REPLAY
@@ -36,7 +35,6 @@ export default function Sceneriocard() {
       </CardContent>
       <CardActions>
         <Button size="small" color='black'onClick={() => navigate('/scenerio')} ><DoubleArrowIcon></DoubleArrowIcon></Button>
-      
       </CardActions>
     </Card>
   );

@@ -12,6 +12,7 @@ export default function Auditres({ scenarioId, scenarioName, countryCode }) {
           const getScenarioDetailsUrl = `http://localhost:8080/getAuditsBy/${scenarioId}/${scenarioName}/${countryCode}`;
           const response = await axios.get(getScenarioDetailsUrl);
           setResponseDataList(response.data);
+          console.log(response);
         }
       } catch (error) {
         console.log("Error retrieving data:", error.message);
@@ -43,6 +44,10 @@ export default function Auditres({ scenarioId, scenarioName, countryCode }) {
         <table className='AuditsTable'>
           <thead>
             <tr>
+              <th>inboundQueue</th>
+              <th>outboundQueue</th>
+              <th>sourceTimeStamp</th>
+              <th>targetTimeStamp</th>
               <th>Hops</th>
               <th>Payload</th>
             </tr>
@@ -50,8 +55,15 @@ export default function Auditres({ scenarioId, scenarioName, countryCode }) {
           <tbody>
             {responseDataList.map((item, index) => (
               <tr key={index}>
+                 <td>{item.inboundQueue}</td>
+                 <td>{item.outboundQueue}</td>
+                 <td>{item.sourceTimeStamp}</td>
+                 <td>{item.targetTimeStamp}</td>
                 <td>{item.hops}</td>
-                <td>{renderPayload(item.payload)}</td>
+                <td >
+                  <div style={{ overflowY: 'auto',overflowX: 'hidden', scrollbarWidth: 'thin', maxHeight: '50px' }}>
+                  {renderPayload(item.payload)}</div>
+                </td>
               </tr>
             ))}
           </tbody>

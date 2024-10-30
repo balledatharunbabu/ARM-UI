@@ -18,12 +18,7 @@ export default function Drawer(){
 
 <button className='Buttons' onClick={()=>{navigate("/scenario/audit")}} >AUDIT</button>
 <button className='Buttons' onClick={()=>{navigate("/scenario/exception")}}>EXCEPTION</button>
-<button className='Buttons' >REPLAY</button>
-
-
-
-    
-    
+<button className='Buttons' onClick={()=>{navigate("/scenario/replay")}}>REPLAY</button>
 </div>
   )
 }

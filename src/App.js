@@ -16,6 +16,8 @@ import Auditscenerio from './Pages/Auditscenerio'
 
 import AuditResponse from './Pages/AuditResponse'
 
+import ExcepReplay from './Pages/ExceptionReplay';
+
 function App() {
 
   return(
@@ -39,7 +41,7 @@ function App() {
           <Route path="/scenario/audit" element={<Auditscenerio></Auditscenerio>}></Route>
           <Route path="/scenario/auditResponse" element={<AuditResponse></AuditResponse >}></Route>
           
-          <Route path="/scenario/replay" element={<Auditscenerio></Auditscenerio>}></Route>
+          <Route path="/scenario/replay" element={<ExcepReplay></ExcepReplay>}></Route>
 
         </Routes>
       

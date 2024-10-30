@@ -116,11 +116,12 @@
     font-size: 15px;
     border-radius: 5px;
   }
-  .exceptionStack,.payloadDisplay{
+  .ErrorDisplay,.payloadDisplay{
     border: 1px solid black;
     height: auto;
     width: 500px;
     margin: 5px;
+    padding: 10px;
   }
   
   
