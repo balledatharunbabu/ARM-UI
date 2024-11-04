@@ -12,14 +12,8 @@ function Home(){
     return(
         < div className='homestyle' style={{height:'125vh'}}>
         <ButtonAppBar></ButtonAppBar> 
-
             <Carddisplay />
-
-
             <Carddisplay2 />
-
- 
-
         </div>
     )
 }

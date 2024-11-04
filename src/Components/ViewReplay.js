@@ -19,13 +19,25 @@ const ViewReplay = () => {
     };
     useEffect(() => {   showReplays(); }, []); 
 
+    const handleReplay = (scenarioId, exceptionRoute) => {
+        console.log(scenarioId,exceptionRoute)
+        const replayUrl = `http://localhost:8080/getReplay/${scenarioId}/${exceptionRoute}`;
+        axios.get(replayUrl)
+            .then(response => {
+                console.log(response.data);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    };
+    
+
     return (
         <div className='Replays'>
             {details.map((item, index) => (
                     <div key={index} className='eachBox'>
                         <p>Scenario ID: {item.scenarioId}</p>
                         <p>Exception: {item.exceptionRoute}</p>
-                        <button className='replayBtn'>Replay</button>
+                        <button className='replayBtn' onClick={handleReplay(item.scenarioId, item.exceptionRoute)}>Replay</button>
+                        {/* <button className='replayBtn' >Replay</button> */}
                     </div>
             ))}
         </div>

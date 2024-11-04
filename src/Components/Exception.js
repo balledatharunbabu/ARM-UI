@@ -111,8 +111,8 @@ const ExceptionDetails = () => {
                         </div>
                     )}
                     <br></br>
-                    <center>
-                    <button className='PayloadBtn' onClick={navigateReplay}>Handle Exception</button></center>
+                    {/* <center>
+                    <button className='PayloadBtn' onClick={navigateReplay}>Handle Exception</button></center> */}
                 </div>
             )}
         </div>

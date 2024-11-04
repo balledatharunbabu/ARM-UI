@@ -6,7 +6,7 @@ import View from '../Components/View'
 import '../Style/Common/common.css'
 
 
-import ScenarioCreation from '../Components/sceneriocreation'
+import ScenarioCreation1 from '../Components/sceneriocreation'
 export default function ViewScenerio(){
     return(
       <div className='scenerio' style={{display:'flex',flexDirection:'column',height:"100vh", width:"100%"}}>
@@ -21,7 +21,7 @@ export default function ViewScenerio(){
             <Drawer/> 
 
           <div  style={{height:'91vh',width:'82%',alignItems:'center',justifyContent:'center'}}>
-                 <ScenarioCreation></ScenarioCreation>
+                 <ScenarioCreation1></ScenarioCreation1>
           </div>
       
 

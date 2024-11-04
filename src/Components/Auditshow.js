@@ -48,6 +48,7 @@ export default function Auditres({ scenarioId, scenarioName, countryCode }) {
               <th>outboundQueue</th>
               <th>sourceTimeStamp</th>
               <th>targetTimeStamp</th>
+              <th>auditStatus</th>
               <th>Hops</th>
               <th>Payload</th>
             </tr>
@@ -59,6 +60,7 @@ export default function Auditres({ scenarioId, scenarioName, countryCode }) {
                  <td>{item.outboundQueue}</td>
                  <td>{item.sourceTimeStamp}</td>
                  <td>{item.targetTimeStamp}</td>
+                 <td>{item.inAuditStatus}</td>
                 <td>{item.hops}</td>
                 <td >
                   <div style={{ overflowY: 'auto',overflowX: 'hidden', scrollbarWidth: 'thin', maxHeight: '50px' }}>
