@@ -31,7 +31,7 @@ export default function Sceneriocard() {
     
         </Typography>
         <Typography variant="body2" sx={{ color: '#011F5B', fontSize:'17px' }}>
-          We can create a scenerio and Configure an integeration flow 
+          Create a scenerio and Configure an integeration flow 
         </Typography>
       </CardContent>
       <CardActions>

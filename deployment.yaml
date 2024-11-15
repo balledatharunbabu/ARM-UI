@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: armadaui-react-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: armadaui-react-app
+  template:
+    metadata:
+      labels:
+        app: armadaui-react-app
+    spec:
+      containers:
+        - name: react-container
+          image: rsivangi/armadaui:latest   # Ensure there is a space after 'image:'
+          ports:
+            - containerPort: 3000

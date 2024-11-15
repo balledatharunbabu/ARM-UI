@@ -19,7 +19,7 @@ export default function Sceneriocard() {
       transform: 'scale(1.05)', 
       boxShadow: '0px 8px 10px #000000',
       // background:'#F0FFFF'
-    }}} onClick={()=>{navigate("/replay")}}>
+    }}} onClick={()=>{navigate("/scenario/replay")}}>
         <CardMedia sx={{ height: 140}}   image='/Replay.PNG'>
           {/* <Typography  variant="h4" component="div" color='WHITE' bgcolor={'#1F1C2C'} padding='40px' fontSize={'25px'} >
                REPLAY
@@ -29,12 +29,12 @@ export default function Sceneriocard() {
         <Typography gutterBottom variant="h1" component="div" color='#0f62fe'>
     
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          We can create a scenerio and Configure an integeration flow 
+        <Typography variant="body2" sx={{ color: '#011F5B', fontSize:'17px' }}>
+        Replayable exceptions can be handled here
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color='black'onClick={() => navigate('/scenerio')} ><DoubleArrowIcon></DoubleArrowIcon></Button>
+        <Button size="small" color='black'onClick={() => navigate('/ViewReplay')} ><DoubleArrowIcon></DoubleArrowIcon></Button>
       </CardActions>
     </Card>
   );

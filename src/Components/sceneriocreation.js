@@ -7,21 +7,21 @@ import Button from '@mui/material/Button';
 
 const ScenarioCreation1 = () => {
   const [scenarioCreationData, setScenarioCreationData] = useState({
-    scenarioname: "",
-    countrycode: "",
+    scenarioName: "",
+    countryCode: "",
     hops: "",
-    inboundqueue: "",
-    outboundqueue: "",
+    inboundQueue: "",
+    outboundQueue: "",
   });
 
   const [loading, setLoading] = useState(false);
 
   const [errors, setErrors] = useState({
-    scenarioname: false,
-    countrycode: false,
+    scenarioName: false,
+    countryCode: false,
     hops: false,
     inboundqueue: false,
-    outboundqueue: false,
+    outboundQueue: false,
   });
 
   const [submit, noSubmit] = useState(false);
@@ -35,22 +35,22 @@ const ScenarioCreation1 = () => {
       [name]: value,
     });
 
-    if(name === "scenarioname")
+    if(name === "scenarioName")
     {
         if(!isNaN(value) || value === "" || value === " "){
-          setErrors((fTot) => ({...fTot,scenarioname: true }));
+          setErrors((fTot) => ({...fTot,scenarioName: true }));
         }
         else{
-          setErrors((fTot) => ({...fTot,scenarioname: false }));
+          setErrors((fTot) => ({...fTot,scenarioName: false }));
         }
     }
-    else if(name === "countrycode")
+    else if(name === "countryCode")
     {
         if(!isNaN(value) || value === "" || value.length !== 2){
-          setErrors((fTot) => ({...fTot,countrycode: true }));
+          setErrors((fTot) => ({...fTot,countryCode: true }));
         }
         else{
-          setErrors((fTot) => ({...fTot,countrycode: false }));
+          setErrors((fTot) => ({...fTot,countryCode: false }));
         }
     }
     else if(name === "hops")
@@ -62,22 +62,22 @@ const ScenarioCreation1 = () => {
           setErrors((fTot) => ({...fTot,hops: false }));
         }
     }
-    else if(name === "inboundqueue")
+    else if(name === "inboundQueue")
     {
         if(!isNaN(value) || value === ""){
-          setErrors((fTot) => ({...fTot,inboundqueue: true }));
+          setErrors((fTot) => ({...fTot,inboundQueue: true }));
         }
         else{
-          setErrors((fTot) => ({...fTot,inboundqueue: false }));
+          setErrors((fTot) => ({...fTot,inboundQueue: false }));
         }
     }
-    else if(name === "outboundqueue")
+    else if(name === "outboundQueue")
     {
         if(!isNaN(value) || value === ""){
-          setErrors((fTot) => ({...fTot,outboundqueue: true }));
+          setErrors((fTot) => ({...fTot,outboundQueue: true }));
         }
         else{
-          setErrors((fTot) => ({...fTot,outboundqueue: false }));
+          setErrors((fTot) => ({...fTot,outboundQueue: false }));
         }    
     }
     else{ }
@@ -86,8 +86,8 @@ const ScenarioCreation1 = () => {
 
   const handleCreate = async (e) => {
     e.preventDefault();
-    if((scenarioCreationData.scenarioname ==="" || errors.scenarioname)  ||  scenarioCreationData.countrycode ==="" ||  scenarioCreationData.hops ===""
-      || scenarioCreationData.inboundqueue==="" || scenarioCreationData.outboundqueue==="")
+    if((scenarioCreationData.scenarioName ==="" || errors.scenarioName)  ||  scenarioCreationData.countryCode ==="" ||  scenarioCreationData.hops ===""
+      || scenarioCreationData.inboundQueue==="" || scenarioCreationData.outboundQueue==="")
     { 
       noSubmit(true);
       return;
@@ -95,7 +95,7 @@ const ScenarioCreation1 = () => {
     else{
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:8001/scenarioCreation', {
+        const response = await fetch('http://172.17.2.77:8080/scenarioCreation', {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(scenarioCreationData),
@@ -141,21 +141,21 @@ const ScenarioCreation1 = () => {
               className='InputFields'
               id="demo-helper-text-misaligned1"
               label="Scenario name"
-              name="scenarioname"
-              value={scenarioCreationData.scenarioname}
-              error={errors.scenarioname}
+              name="scenarioName"
+              value={scenarioCreationData.scenarioName}
+              error={errors.scenarioName}
               onChange={handleInputChange}
-              helperText={errors.scenarioname ? "Invalid Scenario name" : ""}
+              helperText={errors.scenarioName ? "Invalid Scenario name" : ""}
             />
             <TextField
               className='InputFields'
               id="demo-helper-text-misaligned"
               label="Country Code"
-              name="countrycode"
-              value={scenarioCreationData.countrycode}
-              error={errors.countrycode}
+              name="countryCode"
+              value={scenarioCreationData.countryCode}
+              error={errors.countryCode}
               onChange={handleInputChange}
-              helperText={errors.countrycode ? "Invalid Country code" : ""}
+              helperText={errors.countryCode ? "Invalid Country code" : ""}
             />
             <TextField
               className='InputFields'
@@ -171,21 +171,21 @@ const ScenarioCreation1 = () => {
               className='InputFields'
               id="demo-helper-text-misaligned"
               label="Inbound Queue"
-              name="inboundqueue"
-              value={scenarioCreationData.inboundqueue}
-              error={errors.inboundqueue}
+              name="inboundQueue"
+              value={scenarioCreationData.inboundQueue}
+              error={errors.inboundQueue}
               onChange={handleInputChange}
-              helperText={errors.inboundqueue ? "Invalid Inbound Queue" : ""}
+              helperText={errors.inboundQueue ? "Invalid Inbound Queue" : ""}
             />
             <TextField
               className='InputFields'
               id="demo-helper-text-misaligned"
               label="Outbound Queue"
-              name="outboundqueue"
-              value={scenarioCreationData.outboundqueue}
-              error={errors.outboundqueue}
+              name="outboundQueue"
+              value={scenarioCreationData.outboundQueue}
+              error={errors.outboundQueue}
               onChange={handleInputChange}
-              helperText={errors.outboundqueue ? "Invalid Outbound Queue" : ""}
+              helperText={errors.outboundQueue ? "Invalid Outbound Queue" : ""}
             />
 
             <Box sx={{ m: 1, position: 'relative' }}>

@@ -97,20 +97,21 @@ const ExceptionDetails = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <button className='PayloadBtn' onClick={excepStack}>Error Message</button>
-                    {showExcepStack && (
-                        <div className='ErrorDisplay'>
-                            <span style={{ height: 'auto', display: 'block', overflow: 'auto' }}>{details?.errorMessage || ''}</span>
-                        </div>
-                    )}
-                    <br />
+                    
                     <button className='PayloadBtn' onClick={displayPayload}>Payload</button>
                     {payload && (
                         <div className='payloadDisplay'>
-                            <span style={{ height: 'auto', display: 'block', overflowY: 'auto',overflowX: 'hidden', scrollbarWidth: 'thin',}}>{JSON.stringify(details?.payload, null, 2) || ''}</span>
+                            <span style={{ height: '3rem', display: 'block', overflowY: 'auto',overflowX: 'auto', scrollbarWidth: 'thin'}}>{JSON.stringify(details?.payload, null, 2) || ''}</span>
                         </div>
                     )}
                     <br></br>
+                    <button className='PayloadBtn' onClick={excepStack}>Error Message</button>
+                    {showExcepStack && (
+                        <div className='ErrorDisplay'>
+                            <span style={{ height: '10rem', display: 'block', overflow: 'auto', scrollbarWidth: 'thin' }}>{details?.errorMessage || ''}</span>
+                        </div>
+                    )}
+                    <br />
                     {/* <center>
                     <button className='PayloadBtn' onClick={navigateReplay}>Handle Exception</button></center> */}
                 </div>

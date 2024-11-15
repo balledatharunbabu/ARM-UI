@@ -9,7 +9,7 @@ export default function Auditres({ scenarioId, scenarioName, countryCode }) {
     const fetchData = async () => {
       try {
         if (scenarioId && scenarioName && countryCode) {
-          const getScenarioDetailsUrl = `http://localhost:8080/getAuditsBy/${scenarioId}/${scenarioName}/${countryCode}`;
+          const getScenarioDetailsUrl = `http://172.17.2.77:8080/getAuditsBy/${scenarioId}/${scenarioName}/${countryCode}`;
           const response = await axios.get(getScenarioDetailsUrl);
           setResponseDataList(response.data);
           console.log(response);
@@ -48,7 +48,7 @@ export default function Auditres({ scenarioId, scenarioName, countryCode }) {
               <th>outboundQueue</th>
               <th>sourceTimeStamp</th>
               <th>targetTimeStamp</th>
-              <th>auditStatus</th>
+              {/* <th>auditStatus</th> */}
               <th>Hops</th>
               <th>Payload</th>
             </tr>
@@ -60,7 +60,7 @@ export default function Auditres({ scenarioId, scenarioName, countryCode }) {
                  <td>{item.outboundQueue}</td>
                  <td>{item.sourceTimeStamp}</td>
                  <td>{item.targetTimeStamp}</td>
-                 <td>{item.inAuditStatus}</td>
+                 {/* <td>{item.inAuditStatus}</td> */}
                 <td>{item.hops}</td>
                 <td >
                   <div style={{ overflowY: 'auto',overflowX: 'hidden', scrollbarWidth: 'thin', maxHeight: '50px' }}>
