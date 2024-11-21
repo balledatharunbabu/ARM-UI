@@ -89,4 +89,52 @@
 
   }
    
- 
+ /* --- Responsive Media Queries --- */
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+  .OuterDiv {
+      width: 70%;
+      height: auto;
+      padding: 20px;
+  }
+
+  .InputFields {
+      width: 80%;
+      margin-left: 0;
+  }
+
+  .ScenarioDetailsHeader {
+      font-size: 18px;
+      height: 3rem;
+  }
+
+  .ScenarioCreationBody {
+      gap: 0.8rem;
+  }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .OuterDiv {
+      width: 90%;
+      height: auto;
+      padding: 15px;
+      box-shadow: none; 
+  }
+
+  .InputFields {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .ScenarioDetailsHeader {
+      font-size: 16px;
+      height: 2.5rem;
+      text-align: center;
+  }
+
+  .ScenarioCreationBody {
+      gap: 0.5rem;
+  }
+}

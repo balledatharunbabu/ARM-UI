@@ -201,7 +201,8 @@ const ScenarioCreation1 = () => {
                 <CircularProgress
                   size={24}
                   sx={{
-                    color: 'blue',
+                    color: 'white',
+                    backgroundColor: '#012169',
                     position: 'absolute',
                     top: '50%',
                     left: '50%',

@@ -85,11 +85,11 @@ const ExceptionDetails = () => {
                         <tbody>
                             <tr>
                                 <td><span style={{ color: 'black' }}>Message ID:</span></td>
-                                <td><input className='tdInput' value={details?.messageId || ''} readOnly /></td>
+                                <td><input className='tdInput' value={details?.originaMessageId || ''} readOnly /></td>
                             </tr>
                             <tr>
                                 <td><span style={{ color: 'black' }}>Timestamp:</span></td>
-                                <td><input className='tdInput' value={details?.timeStamp || ''} readOnly /></td>
+                                <td><input className='tdInput' value={details?.exceptionTimeStamp || ''} readOnly /></td>
                             </tr>
                             <tr>
                                 <td><span style={{ color: 'black' }}>Exception Route:</span></td>

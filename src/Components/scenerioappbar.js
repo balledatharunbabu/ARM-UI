@@ -21,7 +21,7 @@ function ScenerioAppBar(){
         <Button variant="text" sx={{color:'WHITE',fontSize:'25px'}} onClick={()=>navigate("/")}>ARMADA</Button>
             <Button sx={{marginLeft:40, backgroundColor: isActive('/scenario/view') ? 'white' : 'white',color:isActive('/scenario/view')?'BLACK':'black'}} className='Button' onClick={()=>navigate("/scenario/view")}>VIEW</Button>
             <Button sx={{marginLeft:40, backgroundColor: isActive('/scenario/createscenerio') ? 'white':'white',color:isActive('/scenario/createscenerio')?'black':'black'}} className='Button' onClick={()=>navigate("/scenario/createscenerio")}>CREATE</Button>
-            <Button sx={{marginLeft:40, backgroundColor: isActive('/scenario/modify') ? '#6A5ACD' : 'white',color:isActive('/scenario/modify')?'white':'black'}} className='Button' >MODIFY</Button>
+            {/* <Button sx={{marginLeft:40, backgroundColor: isActive('/scenario/modify') ? '#6A5ACD' : 'white',color:isActive('/scenario/modify')?'white':'black'}} className='Button' >MODIFY</Button> */}
         </box>
            
         </Toolbar>

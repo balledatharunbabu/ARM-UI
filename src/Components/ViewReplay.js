@@ -8,7 +8,7 @@ import '../Style/Replay/Replay.css';
 const ViewReplay = () => {
     const [details, setDetails] = useState([]);
     const showReplays= () => {
-        const scenarioDetailsUrl = `http://localhost:8080/getreplayDetails`;
+        const scenarioDetailsUrl = `http://172.17.2.77:8080/getreplayDetails`;
         
         axios.get(scenarioDetailsUrl)
             .then(response => {

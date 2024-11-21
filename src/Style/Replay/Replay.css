@@ -28,3 +28,48 @@
     border-radius: 3px;
     font-size: 15px;
 }
+
+/* --- Responsive Media Queries --- */
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .Replays {
+        margin-left: 1rem;
+        margin-top: 3rem;
+        gap: 1.5rem;
+    }
+
+    .eachBox {
+        width: 90%; /* Adjust the box width */
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .replayBtn {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .Replays {
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .eachBox {
+        width: 100%; /* Use full width */
+        padding: 8px;
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .replayBtn {
+        align-self: flex-end; /* Align button to the end */
+        padding: 4px;
+        font-size: 13px;
+    }
+}

@@ -45,3 +45,61 @@ padding-bottom: 3px;
 /* .scenerio{
     gap:0.1px;
 } */
+
+
+/* Menu for Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .Menu {
+        width: 30%; /* Reduce the width */
+        gap: 15px; /* Adjust gap between buttons */
+    }
+}
+
+/* Menu for Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .Menu {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height */
+        flex-direction: row; /* Align buttons horizontally */
+        justify-content: space-around; /* Evenly space buttons */
+        margin-top: 0;
+    }
+}
+
+/* Buttons Styling */
+.Buttons {
+    color: gray;
+    text-align: left;
+    background-color: transparent;
+    height: 2rem;
+    padding: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+}
+
+/* Buttons hover effect */
+.Buttons:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Buttons for Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .Buttons {
+        padding: 15px;
+        font-size: 13px; /* Reduce font size */
+    }
+}
+
+/* Buttons for Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .Buttons {
+        font-size: 12px; /* Further reduce font size */
+        padding: 10px; /* Adjust padding */
+        text-align: center; /* Center-align text */
+    }
+}
